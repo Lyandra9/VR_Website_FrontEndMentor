@@ -1,0 +1,203 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --dark-grey: hsl(0, 0%, 55%);
+  --very-dark-grey: hsl(0, 0%, 41%);
+}
+
+.our-creations {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+  position: relative;
+  text-align: left;
+}
+
+.blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 470px 470px;
+  column-gap: 20px;
+  max-width: 100%;
+}
+#mobile {
+  display: none;
+}
+
+#desktop {
+  display: flex;
+}
+.our-creations h2 {
+  font-size: 35px;
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: left;
+}
+
+.block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+.block img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.layer:hover {
+  background: linear-gradient(
+    to bottom left,
+    rgba(255, 255, 255, 0.2) 20%,
+    rgba(255, 255, 255, 0.1) 70%
+  );
+}
+
+.layer {
+  background: linear-gradient(
+    to bottom left,
+    rgba(0, 0, 0, 0) 20%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.layer h3 {
+  color: var(--white);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  width: 150px;
+}
+
+.our-creations button {
+  font-size: 20px;
+  border: 1px solid black;
+  color: black;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 20px;
+  background-color: var(--white);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 10%;
+}
+
+.our-creations button:hover {
+  color: var(--white);
+  background-color: black;
+  transition: color 0.5s;
+  transition: background-color 0.5s;
+}
+
+@media only screen and (max-width: 950px) {
+  .our-creations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 50px;
+    padding-top: 30px;
+  }
+
+  .blocks {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .our-creations h2 {
+    font-size: 35px;
+    font-weight: 300;
+    font-family: "Josefin Sans", sans-serif;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 100%;
+  }
+
+  .layer {
+    background: linear-gradient(
+      to bottom left,
+      rgba(0, 0, 0, 0) 20%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 20px;
+  }
+
+  .layer h3 {
+    color: var(--white);
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    width: 150px;
+  }
+
+  .our-creations button {
+    font-size: 20px;
+    border: 1px solid black;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 50px;
+    margin-top: 20px;
+    background-color: var(--white);
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    align-self: center;
+    top: unset;
+    right: unset;
+  }
+
+  .our-creations button:hover {
+    color: var(--white);
+    background-color: black;
+    transition: color 0.5s;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  #desktop {
+    display: none;
+  }
+}

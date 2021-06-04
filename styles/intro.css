@@ -1,0 +1,97 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --dark-grey: hsl(0, 0%, 55%);
+  --very-dark-grey: hsl(0, 0%, 41%);
+}
+
+.intro {
+  padding: 10% 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro img {
+  max-width: 100%;
+}
+
+.intro-text-div {
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: #fff;
+  height: 450px;
+}
+
+.white-text-block {
+  text-align: left;
+  padding-top: 10%;
+  padding-left: 15%;
+  padding-right: 10%;
+  margin-left: -40%;
+  background-color: #fff;
+}
+
+.intro-text-div h2 {
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 45px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.intro-text-div p {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 950px) {
+  .intro {
+    padding: 10% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro img {
+    max-width: 115%;
+  }
+
+  .intro-text-div {
+    color: var(--black);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: unset;
+  }
+
+  .white-text-block {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+  }
+
+  .intro-text-div h2 {
+    font-weight: 300;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 35px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+  }
+
+  .intro-text-div p {
+    font-family: "Josefin Sans", sans-serif;
+    line-height: 20px;
+    font-size: 17px;
+    font-weight: 300;
+  }
+}
